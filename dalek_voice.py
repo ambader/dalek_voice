@@ -3,7 +3,7 @@ import pandas as pd
 import simpleaudio as sa
 from audio2numpy import open_audio
 
-#reduce voice to range between 250 Hz and 4 kHz
+#reduce voice to range between 250 Hz and 4 kHz (not sure if the method is right)
 
 def mk_mid(inp,sampling_rate,mid_range=[250,4000]):
     t = np.linspace(0,1,sampling_rate) 
